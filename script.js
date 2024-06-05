@@ -1,9 +1,5 @@
-
 actualiserPosition()
 setInterval(actualiserPosition, 10000);
-
-let positionAnterieur = [];
-
 
 async function actualiserPosition() {
     try {
@@ -20,7 +16,6 @@ async function actualiserPosition() {
         const container = document.getElementById('position')
         container.textContent = "Latitude = " + latitude + " | Longitude = " + longitude
 
-
         var myIcon = L.icon({
             iconUrl: "./img/marker-station-spacial.png",
             iconSize: [38, 38],
@@ -28,7 +23,6 @@ async function actualiserPosition() {
             popupAnchor: [-3, -76],
             shadowSize: [68, 95],
             shadowAnchor: [22, 94]
-
         });
 
 
